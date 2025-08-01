@@ -31,3 +31,7 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+.wrap{
+    position: relative;
+    display: block;
+}
