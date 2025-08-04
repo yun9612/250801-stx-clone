@@ -24,12 +24,14 @@ a {
 }
 body {
   font-family: "Noto Sans", sans-serif;
+  height: 2000px;
 }
 /* 공통영역 */
 .inner {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  background-color: antiquewhite;
 }
 .wrap{
     position: relative;

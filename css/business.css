@@ -1,1 +1,106 @@
 @charset "utf-8";
+.business {
+  padding: 100px 0;
+}
+.b_inner {
+  text-align: center;
+}
+/* 상단 */
+.b_top {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+.b_title {
+  font-size: 44px;
+  font-weight: bold;
+  position: relative;
+}
+.b_title::after {
+  position: absolute;
+  left: 50%;
+  bottom: -26px;
+  transform: translateX(-50%);
+  width: 37px;
+  height: 4px;
+  background-color: #ff0000;
+  content: "";
+}
+.b_desc {
+  font-weight: 300;
+}
+/* 하단 */
+.b_list {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  background-color: aliceblue;
+}
+.b_list li {
+  width: calc(100% / 5);
+  background: url("../images/img_business.png") no-repeat;
+  background-position: 0px 0px;
+}
+.b_list li:nth-child(1) {
+  background-position: calc(240px * 0) 0px;
+}
+.b_list li:nth-child(2) {
+  background-position: calc(240px * -1) 0px;
+}
+.b_list li:nth-child(3) {
+  background-position: calc(240px * -2) 0px;
+}
+.b_list li:nth-child(4) {
+  background-position: calc(240px * -3) 0px;
+}
+.b_list li:nth-child(5) {
+  background-position: calc(240px * -4) 0px;
+}
+.b_list li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 100px;
+  color: #fff;
+  font-size: 24px;
+  background-color: rgba(244, 128, 37, 0);
+  transition: all 0.5s;
+  position: relative;
+}
+.b_list li a::after {
+  content: "";
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 112px;
+  background: url("../images/bg_common.png") no-repeat;
+  background-position: 0px 0px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.b_list li:nth-child(1) a::after {
+  background-position: -169px 0px;
+}
+.b_list li:nth-child(2) a::after {
+  background-position: -298px 0px;
+}
+.b_list li:nth-child(3) a::after {
+  background-position: 0px -123px;
+}
+.b_list li:nth-child(4) a::after {
+  background-position: -139px -123px;
+}
+.b_list li:nth-child(5) a::after {
+  background-position: -270px -115px;
+}
+.b_list li a:hover {
+  background-color: rgba(244, 128, 37, 1);
+  font-weight: 500;
+}
+.b_list li a:hover::after {
+  opacity: 1;
+}
