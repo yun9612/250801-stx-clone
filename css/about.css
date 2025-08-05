@@ -1,1 +1,69 @@
 @charset "utf-8";
+.about {
+  padding: 100px 0;
+}
+.about_us h3 {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.about_title {
+  font-weight: 500;
+  font-size: 21px;
+}
+.about_txt {
+  font-size: 15px;
+}
+.about_desc {
+  padding-left: 100px;
+  position: relative;
+}
+.about_desc::after {
+  content: "";
+  width: 37px;
+  height: 5px;
+  position: absolute;
+  left: 0px;
+  top: 18px;
+  background-color: #ed1c24;
+}
+.about_us {
+  position: relative;
+  height: 369px;
+}
+.about_us::after {
+  content: "";
+  width: 600px;
+  height: 369px;
+  background: url("../images/img_about.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.a_icon_list {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin: auto;
+  margin-top: 80px;
+}
+.a_icon_list li a {
+  display: flex;
+  background: url("../images/bg_icon.png") no-repeat;
+  width: 103px;
+  height: 160px;
+}
+.a_icon_list li a span {
+  text-align: center;
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: auto;
+}
+.a_icon_list li:nth-child(2) a{
+    background-position: -120px 0;
+}
+.a_icon_list li:nth-child(3) a{
+    background-position: -235px 0;
+}
