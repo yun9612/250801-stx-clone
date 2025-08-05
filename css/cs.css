@@ -24,7 +24,7 @@
   content: "";
   width: 178px;
   height: 103px;
-  background: url("../images/bg_faq.png");
+  background: url("../images/bg_faq.png") no-repeat;
   position: absolute;
   top: 0;
   right: 0;
@@ -36,7 +36,7 @@
   content: "";
   width: 122px;
   height: 122px;
-  background: url("../images/bg_custom.png");
+  background: url("../images/bg_custom.png") no-repeat;
   position: absolute;
   top: 0;
   right: 0;
